@@ -239,12 +239,8 @@ function displayCart() {
 
         <div class="delivery-message">
 
-            <span>
-                🌱
-            </span>
-
             <p>
-                This is a carbon-neutral delivery.
+                Continue.
             </p>
 
         </div>
@@ -329,7 +325,7 @@ function updateProductButtons() {
                 <button class="add-cart-btn">
 
                     <span>
-                        🛒
+                        <img src="/assets/images/icon-add-to-cart.svg">
                     </span>
 
                     Add to Cart

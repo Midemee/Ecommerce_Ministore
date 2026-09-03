@@ -201,14 +201,6 @@ img {
 }
 
 .add-cart-btn {
-    position: absolute;
-
-    left: 50%;
-
-    bottom: -18px;
-
-    transform: translateX(-50%);
-
     min-width: 145px;
 
     height: 42px;
@@ -450,4 +442,294 @@ img {
     .section-heading h1 {
         font-size: 27px;
     }
+}
+
+/* =========================
+   SELECTED PRODUCT
+========================= */
+
+.product-card.selected .product-image {
+    border: 2px solid #c84620;
+}
+
+
+
+/* =========================
+   PRODUCT ACTION CONTAINER
+========================= */
+
+.product-action {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: -18px;
+
+    transform: translateX(-50%);
+}
+
+
+
+/* Remove positioning from old button because
+   product-action now handles its position */
+
+.product-action .add-cart-btn {
+    position: static;
+
+    transform: none;
+}
+
+
+.product-action .add-cart-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================
+   QUANTITY CONTROLS
+========================= */
+
+.quantity-control {
+    width: 145px;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    border-radius: 30px;
+
+    background-color: #c84620;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.quantity-control button {
+    width: 22px;
+
+    height: 22px;
+
+    border: 1px solid white;
+
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+.quantity-control button:hover {
+    background-color: white;
+
+    color: #c84620;
+}
+
+
+.quantity-control span {
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+
+/* =========================
+   CART ITEMS
+========================= */
+
+.cart-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #eee6e2;
+}
+
+
+.cart-item-details h3 {
+    font-size: 13px;
+
+    color: #30211d;
+
+    margin-bottom: 8px;
+}
+
+
+.cart-item-price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 12px;
+
+    color: #9c8a83;
+}
+
+
+.cart-item-quantity {
+    color: #c84620;
+
+    font-weight: 700;
+}
+
+
+.cart-item-price strong {
+    color: #66534c;
+}
+
+
+
+/* =========================
+   REMOVE CART ITEM
+========================= */
+
+.remove-cart-item {
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    border: 1px solid #b7a69f;
+
+    background-color: transparent;
+
+    color: #8b7871;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+
+.remove-cart-item:hover {
+    background-color: #2b1712;
+
+    color: white;
+
+    border-color: #2b1712;
+}
+
+
+
+/* =========================
+   CART TOTAL
+========================= */
+
+.cart-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+
+.cart-total span {
+    font-size: 13px;
+
+    color: #63534d;
+}
+
+
+.cart-total strong {
+    font-size: 23px;
+
+    color: #2b1712;
+}
+
+
+
+/* =========================
+   DELIVERY MESSAGE
+========================= */
+
+.delivery-message {
+    background-color: #fcf8f5;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.delivery-message p {
+    font-size: 11px;
+
+    color: #54453f;
+}
+
+
+
+/* =========================
+   CONFIRM ORDER
+========================= */
+
+.confirm-order-btn {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #c84620;
+
+    color: white;
+
+    padding: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.confirm-order-btn:hover {
+    background-color: #a93415;
 }
