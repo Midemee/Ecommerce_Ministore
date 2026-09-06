@@ -1,0 +1,84 @@
+/* ---------------------------------------------------
+   SIGN IN CARD (same shape as signup-card)
+--------------------------------------------------- */
+.signin-card {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.logo {
+  background-color: #222238; /* dark navy box */
+  color: white;
+  width: fit-content;
+  margin: 0 auto 30px auto; /* centers the logo, adds space below it */
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #e93ad2; /* the pink "MB" part */
+}
+
+.store{
+    color: #0d0c50;
+}
+
+
+/* ---------------------------------------------------
+   FORGOT PASSWORD LINK
+--------------------------------------------------- */
+.forgot-password {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------
+   SIGN IN BUTTON (same style as signup-button)
+--------------------------------------------------- */
+.signin-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1a1a68;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.signin-button:hover {
+  background-color: #51ce51;
+}
+
+/* ---------------------------------------------------
+   SIGN UP LINK TEXT
+--------------------------------------------------- */
+.signup-text {
+  text-align: center;
+  font-size: 13px;
+  color: #763080;
+}
+
+.signup-text a {
+  color: #d36fc2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-text a,
+.forgot-password a {
+  text-decoration: underline;
+}
