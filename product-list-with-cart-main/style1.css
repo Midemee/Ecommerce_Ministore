@@ -1,0 +1,122 @@
+/* ---------------------------------------------------
+   1. RESET / BASE STYLES
+   These rules just make sure every browser starts
+   from the same clean slate.
+--------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding won't make boxes bigger than expected */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; /* centers our form horizontally */
+  padding: 40px 20px;
+}
+
+/* ---------------------------------------------------
+   2. THE CARD / CONTAINER
+--------------------------------------------------- */
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* ---------------------------------------------------
+   3. LOGO
+--------------------------------------------------- */
+.logo {
+  background-color: #222238; /* dark navy box */
+  color: white;
+  width: fit-content;
+  margin: 0 auto 30px auto; /* centers the logo, adds space below it */
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #e93ad2; /* the pink "MB" part */
+}
+
+.store{
+    color: #0d0c50;
+}
+
+/* ---------------------------------------------------
+   4. HEADINGS / TEXT
+--------------------------------------------------- */
+h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------
+   5. FORM FIELDS
+--------------------------------------------------- */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none; /* removes the default blue browser outline */
+}
+
+input:focus {
+  border-color: #d63aff; /* highlight the input when the user clicks into it */
+}
+
+/* ---------------------------------------------------
+   7. SIGN UP BUTTON
+--------------------------------------------------- */
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #61218ae7; /* purple */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.signup-button:hover {
+  background-color: #c587eeea; /* slightly darker purple on hover */
+}
+
+/* ---------------------------------------------------
+   8. SIGN IN LINK
+--------------------------------------------------- */
+.signin-text {
+  text-align: center;
+  font-size: 13px;
+  color: #333333;
+}
+
+.signin-text a {
+  color: #a020f0;
+  font-weight: bold;
+  text-decoration: none;
+}
