@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventory Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Inventory Management</h1>
+
+        <div class="card">
+
+            <h2>Store Keeper</h2>
+
+
+            <input
+                type="email"
+                id="storeKeeperEmail"
+                placeholder="storekeeper@example.com"
+            >
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Add Product</h2>
+
+            <form id="addProductForm">
+
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Enter product name"
+                    required
+                >
+
+
+                <textarea
+                    id="productDescription"
+                    placeholder="Enter product description"
+                    required
+                ></textarea>
+
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Enter price"
+                    step="0.01"
+                    required
+                >
+
+
+                <input
+                    type="number"
+                    id="productQuantity"
+                    placeholder="Enter quantity"
+                    required
+                >
+
+
+                <input
+                    type="email"
+                    id="addStoreKeeperEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                
+
+                <button type="submit">
+                    Add Product
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Update Product</h2>
+
+            <form id="updateProductForm">
+
+
+                <input
+                    type="text"
+                    id="updateProductId"
+                    placeholder="Enter product ID"
+                    required
+                >
+
+
+                <input
+                    type="text"
+                    id="updateProductName"
+                    placeholder="Enter product name"
+                    required
+                >
+
+
+                <input
+                    type="text"
+                    id="updateProductDescription"
+                    placeholder="Enter description"
+                    required
+                >
+
+
+                <input
+                    type="number"
+                    id="updateProductPrice"
+                    placeholder="Enter price"
+                    step="0.01"
+                    required
+                >
+
+
+                <input
+                    type="number"
+                    id="updateProductQuantity"
+                    placeholder="Enter quantity"
+                    required
+                >
+
+                
+
+                <input
+                    type="email"
+                    id="updateStoreKeeperEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Update Product
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Find Product</h2>
+
+            <form id="getProductForm">
+
+
+                <input
+                    type="text"
+                    id="getProductId"
+                    placeholder="Enter product ID"
+                    required
+                >
+
+                
+                <input
+                    type="email"
+                    id="getProductEmail"
+                    placeholder="storekeeper@example.com"
+                    required
+                >
+
+                <button type="submit">
+                    Get Product
+                </button>
+
+            </form>
+
+            <div id="productResult"></div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Delete Product</h2>
+
+            <form id="deleteProductForm">
+
+
+                <input
+                    type="text"
+                    id="deleteProductId"
+                    placeholder="Enter product ID"
+                    required
+                >
+
+                
+
+                <input
+                    type="email"
+                    id="deleteProductEmail"
+                    placeholder="storekeeper@example.com"
+                    required
+                >
+
+                <button type="submit" class="delete-button">
+                    Delete Product
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>My Inventory</h2>
+
+            <button id="getProductsButton">
+                View Products
+            </button>
+
+            <table>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tbody id="productList">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
