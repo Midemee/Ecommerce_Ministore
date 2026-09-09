@@ -252,17 +252,15 @@ async function deleteProduct() {
 
 
 async function getAllProducts() {
+    console.log(document.querySelector("#storeKeeperEmail").value.trim())
 
-    const email =
-        document.querySelector("#storeKeeperEmail").value.trim();
+    const email = document.querySelector("#storeKeeperEmail").value.trim();
 
 
     if (!email) {
         alert("Enter the store keeper email first");
         return;
     }
-
-
     try {
 
         const response = await fetch(
@@ -295,7 +293,7 @@ function displayProducts(products) {
     productList.innerHTML = "";
 
 
-    if (products.length === 0) {
+    if (products.length == 0) {
 
         productList.innerHTML = `
             <tr>
